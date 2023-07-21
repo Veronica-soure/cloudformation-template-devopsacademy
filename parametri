@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  KeyPairName:
+    Description: 16:73:56:21:d8:73:de:bf:37:0a:17:cb:25:fa:e9:bc:6f:fa:e9:ed
+
+  EnvironmentName:
+    Description: DevOpsAcademy
+    Type: String
+    Default: DevOpsAcademy
+
+  DesiredCapacity:
+    Description: La capacità preferibile del gruppo di autoscaling
+    Type: Number
+    Default: 2
+    MinValue: 1
+    MaxValue: 5
+
+  MaxSize:
+    Description: La capacità massima del gruppo di autoscaling
+    Type: Number
+    Default: 5
+    MinValue: 1
+    MaxValue: 10
+
+  MinSize:
+    Description: La capacità minima del gruppo di autoscaling
+    Type: Number
+    Default: 2
+    MinValue: 1
+    MaxValue: 10
